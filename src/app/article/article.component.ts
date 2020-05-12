@@ -12,7 +12,11 @@ export class ArticleComponent implements OnInit {
 @HostBinding('attr.class') cssClass= 'row'; 
 article: Article;
   constructor() {
-    this.article = new Article('Angular 2','http://angular.io',10);
+    this.articles = [
+    new Article('Angular 2','http://angular.io',10),
+    new Article('Fullstack', 'http://fullstack.io', 2),
+    new Article('Angular Homepage', 'http://angular.io', 1)
+    ]
   }
 
   ngOnInit() {
