@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { ArticleComponent } from './article/article.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule, FontAwesomeModule ],
   declarations: [ AppComponent, HelloComponent, ArticleComponent ],
   bootstrap:    [ AppComponent ]
 })

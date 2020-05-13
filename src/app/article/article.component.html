@@ -1,7 +1,7 @@
 <div class="four wide column center aligned votes">
   <div class="ui statistic">
     <div class="value">
-    {{ articles.votes }}
+    {{ article.votes }}
     </div>
     <div class="label">
     Points
@@ -10,18 +10,19 @@
  </div>
 <div class="twelve wide column">
   <a class="ui large header" href="{{ link }}">
-  {{ articles.title }}
+  {{ article.title }}
   </a>
+  <div class="meta">({{ domain() }})</div>
   <ul class="ui big horizontal list voters">
     <li class="item">
       <a href (click)="voteUp()">
-        <i class="fas fa-arrow-up"></i>
+        <fa-icon [icon]="faThumbsUp" ></fa-icon>
         upvote
       </a>
     </li>
     <li class="item">
       <a href (click)="voteDown()">
-        <i class="fas fa-arrow-up"></i>
+        <fa-icon [icon]="faThumbsDown" ></fa-icon>
         downvote
       </a>
     </li>
