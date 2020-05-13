@@ -18,8 +18,11 @@
 
 </form>
 
+<!-- start adding here -->
 <div class="ui grid posts">
-  <app-article>
-    
+  <app-article
+  *ngFor="let article of sortedArticles()"
+  [article]="article">
   </app-article>
-</div> 
+</div>
+<!-- end adding here -->
